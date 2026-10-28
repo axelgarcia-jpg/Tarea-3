@@ -55,7 +55,7 @@ namespace S01Tarjeta
             GenerarTarjeta(nombre, nivel, esVip, simboloBorde);
         }
 
-        // Método cn múltiples parametros
+        // metodo cn múltiples parametros
         static void GenerarTarjeta(string nombreUsuario, int nivelUsuario, bool esVip, char borde)
         {
             int anchoTarjeta = 38;
@@ -71,7 +71,7 @@ namespace S01Tarjeta
             Console.WriteLine($"| Usuario: {nombreUsuario.PadRight(anchoTarjeta - 13)} |");
             Console.WriteLine($"| Nivel:   {nivelUsuario.ToString().PadRight(anchoTarjeta - 13)} |");
 
-            // 8. Ciclo para construir patrón repetitivo de la barra de nivel
+            // Ciclo para construir patrón repetitivo de la barra de nivel
             string barraNivel = "";
             int limiteGrafico = Math.Min(nivelUsuario, 15); // Límite visual de 15 bloques
             for (int i = 0; i < limiteGrafico; i++)
